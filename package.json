@@ -1,7 +1,7 @@
 {
-  "name": "portfolio_backend",
+  "name": "shyymm-blogs",
   "version": "1.0.0",
-  "description": "This is my portfolio cum blog site build on MERN stack",
+  "description": "This is my portfolio and blog site build on MERN stack",
   "main": "index.js",
   "scripts": {
     "start": "nodemon backend/index.js",
