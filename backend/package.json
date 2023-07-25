@@ -4,7 +4,8 @@
     "description": "This is my portfolio and blog site build on MERN stack",
     "main": "index.js",
     "scripts": {
-      "start": "nodemon index.js"
+      "start": "nodemon index.js",
+      "build": "CI=false && npm install --legacy-peer-deps"
     },
     "author": "its_shyam640",
     "license": "ISC",
