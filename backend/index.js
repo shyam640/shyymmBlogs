@@ -17,7 +17,7 @@ app.use(express.static(path.join(__dirname, 'build')));
 app.use(express.json());
 
 // Allow specific origin (replace with your frontend URL)
-const allowedOrigins = ['https://main--shyymm-blogs.netlify.app', 'https://shyymm-blogs.netlify.app'];
+const allowedOrigins = ['https://main--shyymm-blogs.netlify.app/', 'https://shyymm-blogs.netlify.app/', 'http://127.0.0.1:5000/'];
 app.use(cors({
   origin: function (origin, callback) {
     if (!origin || allowedOrigins.includes(origin)) {

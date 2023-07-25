@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "/",
-  "proxy": "https://shyymm-blogs.onrender.com/",
+  "proxy": "http://127.0.0.1:5000/",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@emotion/is-prop-valid": "^1.2.1",
