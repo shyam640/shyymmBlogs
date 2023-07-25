@@ -15,7 +15,18 @@ const app = express();
 connectDB();
 app.use(express.static(path.join(__dirname, 'build')));
 app.use(express.json());
-app.use(cors());
+
+// Allow specific origin (replace with your frontend URL)
+const allowedOrigins = ['https://main--shyymm-blogs.netlify.app', 'https://shyymm-blogs.netlify.app'];
+app.use(cors({
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error('Not allowed by CORS'));
+    }
+  }
+}));
 
 const PORT = process.env.PORT || 5000;
 
