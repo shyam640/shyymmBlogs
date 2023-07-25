@@ -21,6 +21,7 @@ const Testimonial = () => {
 
   const fetchTestimonial = async () => {
     const data = await axios.get('/api/testimonials');
+    console.log(data);
     setTestimonial(data);
   }
 
