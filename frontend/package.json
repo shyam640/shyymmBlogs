@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "/",
-  "proxy": "https://64be10c6a15ca9000887ae7c--shyymmblogs.netlify.app",
+  "proxy": "https://shyymm-blogs.onrender.com/",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@emotion/is-prop-valid": "^1.2.1",
