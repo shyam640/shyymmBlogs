@@ -11,15 +11,10 @@ import {
   BlogIndex,
   MernBlogRepair,
 } from "./components";
-import Blog from "./pages/Blog";
-import Contact from "./pages/Contact";
-import About from "./pages/About";
-import Auth from "./pages/Auth";
-import CodingProfile from "./pages/CodingProfile";
-import Upload from "./pages/Upload";
+import { About, Auth, Blog, CodingProfile, Contact, Upload } from "./pages";
 
-const Home = React.lazy(() => import("./pages/Home"));
-const Project = React.lazy(() => import("./pages/Project"));
+const Home = React.lazy(() => import("./pages"));
+const Project = React.lazy(() => import("./pages"));
 
 function App() {
   const location = useLocation();
