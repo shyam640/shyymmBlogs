@@ -12,15 +12,14 @@ const ProjectDetails = () => {
   const { id } = useParams();
   const [item, setItem] = useState();
 
-
   const fetchProjects = async () => {
-    const { data } = await axios.get('/api/projects');
+    const { data } = await axios.get("/api/projects");
     setProjects(data);
-  }
+  };
 
   useEffect(() => {
     fetchProjects();
-  }, [])
+  }, []);
 
   useEffect(() => {
     const filtered = projects.find((item) => item._id === id);
@@ -73,7 +72,7 @@ const ProjectDetails = () => {
       <div className="my-6">
         <h2 className="text-2xl font-semibold mb-3">Features</h2>
         <ul className="list-disc grid grid-cols-1 md:grid-cols-2 ml-4">
-          {item?.features?.split('\n').map((feature, index) => (
+          {item?.features?.split("\n").map((feature, index) => (
             <li key={index} className="text-neutral">
               {feature}
             </li>
@@ -81,11 +80,10 @@ const ProjectDetails = () => {
         </ul>
       </div>
 
-
       <div className="my-6">
         <h2 className="text-2xl font-semibold mb-3">Tools & Technologies:</h2>
         <ul className="list-disc grid grid-cols-1 md:grid-cols-2 ml-4">
-          {item?.technologies?.split('\n').map((technology, index) => (
+          {item?.technologies?.split("\n").map((technology, index) => (
             <li key={index} className="text-neutral">
               {technology}
             </li>

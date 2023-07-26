@@ -1,10 +1,20 @@
 import { Route, Routes, useLocation, Navigate } from "react-router-dom";
 import React, { Suspense, useEffect } from "react";
-import { NotFound, Loader, ScrollToTop, ProjectDetails, Navbar, Footer, BlogDetail, BlogIndex, MernBlogRepair } from "./components";
+import {
+  NotFound,
+  Loader,
+  ScrollToTop,
+  ProjectDetails,
+  Navbar,
+  Footer,
+  BlogDetail,
+  BlogIndex,
+  MernBlogRepair,
+} from "./components";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
-import Auth from "./pages/auth";
+import Auth from "./pages/Auth";
 import CodingProfile from "./pages/CodingProfile";
 import Upload from "./pages/Upload";
 

@@ -27,7 +27,7 @@ const BlogDetail = () => {
   const url = window.location.href;
 
   const fetchBlogs = async () => {
-    const { data } = await axios.get('/api/blogs');
+    const { data } = await axios.get("/api/blogs");
     setBlogs(data);
   };
 
@@ -39,7 +39,6 @@ const BlogDetail = () => {
     const current_blog = blogs.find((blog) => blog.path === blog_path);
     setBlog(current_blog);
   }, [blog_path, blogs]);
-
 
   return (
     <div className="mt-20">
@@ -99,9 +98,7 @@ const BlogDetail = () => {
 
           <div className="w-full h-[1px] bg-neutral my-6"></div>
 
-          <h4 className="text-lg font-medium mb-3">
-            Share :{" "}
-          </h4>
+          <h4 className="text-lg font-medium mb-3">Share : </h4>
           <div className="flex items-center gap-4 flex-wrap">
             <EmailShareButton url={url} title="Shyam Sundar Vashishtha">
               <EmailIcon size={32} round={true} />
@@ -124,14 +121,15 @@ const BlogDetail = () => {
 
           <h4 className="text-lg font-medium mb-3">Tags : </h4>
           <div>
-            {blog?.tags && blog.tags.split(' ').map((tag, index) => (
-              <button
-                key={index}
-                className="bg-gray-300 text-white bg-opacity-40 px-2 py-0 m-1 rounded"
-              >
-                {tag}
-              </button>
-            ))}
+            {blog?.tags &&
+              blog.tags.split(" ").map((tag, index) => (
+                <button
+                  key={index}
+                  className="bg-gray-300 text-white bg-opacity-40 px-2 py-0 m-1 rounded"
+                >
+                  {tag}
+                </button>
+              ))}
           </div>
         </div>
       </div>

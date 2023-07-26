@@ -68,8 +68,9 @@ const Service = () => {
     // },
   ];
   return (
-    <div className="py-20 parent"
-    // style={{ backgroundColor: "#313131" }}
+    <div
+      className="py-20 parent"
+      // style={{ backgroundColor: "#313131" }}
     >
       <motion.div
         className="mb-12"
@@ -94,10 +95,11 @@ const Service = () => {
         {services?.map((service) => (
           <div
             key={service.id}
-            className={`${service.id % 2 === 0
-              ? "bg-accent shadow-lg"
-              : "bg-[#313131] shadow-md"
-              } rounded-lg p-6 hover:shadow-primary cursor-pointer duration-300`}
+            className={`${
+              service.id % 2 === 0
+                ? "bg-accent shadow-lg"
+                : "bg-[#313131] shadow-md"
+            } rounded-lg p-6 hover:shadow-primary cursor-pointer duration-300`}
           >
             <div className="mb-4 text-center">
               <span className="inline-block text-5xl text-primary">

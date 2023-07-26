@@ -1,15 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
-import 'react-js-dropdavn/dist/index.css'
+import "react-js-dropdavn/dist/index.css";
 import {
   RiMenu3Fill,
   RiContactsBook2Fill,
   RiFolderInfoFill,
-  RiUpload2Fill
+  RiUpload2Fill,
 } from "react-icons/ri";
-import {
-  SiCodingninjas
-} from "react-icons/si";
+import { SiCodingninjas } from "react-icons/si";
 import { GiCrossMark } from "react-icons/gi";
 import { FaHome, FaDownload } from "react-icons/fa";
 import { MdWork } from "react-icons/md";
@@ -70,7 +68,9 @@ export default function Navbar() {
       <div className="w-full flex items-center justify-between px-3 md:px-24 py-3">
         <div>
           <Link to="/">
-            <h1 className="text-2xl text-primary font-lobster">@its_shyam640</h1>
+            <h1 className="text-2xl text-primary font-lobster">
+              @its_shyam640
+            </h1>
           </Link>
         </div>
         <div>
@@ -99,10 +99,7 @@ export default function Navbar() {
                 </span>
               </PrimaryBtn>
             </a>
-            <a
-              className="inline-block ml-4"
-              href="/auth"
-            >
+            <a className="inline-block ml-4" href="/auth">
               <PrimaryBtn>
                 <span>Upload</span>
                 <span>
@@ -110,7 +107,6 @@ export default function Navbar() {
                 </span>
               </PrimaryBtn>
             </a>
-              
           </ul>
           <div className="block lg:hidden">
             <button onClick={toggleDrawer} className="btn btn-ghost text-white">
@@ -159,10 +155,7 @@ export default function Navbar() {
                       </span>
                     </button>
                   </a>
-                  <a
-                    className="inline-block w-full"
-                    href="/auth"
-                  >
+                  <a className="inline-block w-full" href="/auth">
                     <button className="mt-4 primary-button w-full text-white">
                       <span>Upload</span>
                       <span>

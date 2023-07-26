@@ -37,7 +37,10 @@ const Education = () => {
               <p className="text-sm text-neutral font-semibold">2020 - 2024</p>
             </div>
             <p className="text-sm text-neutral text-justify">
-            Currently pursuing a Bachelor\'s degree in Computer Science at Lovely Professional University in Punjab, India, with coursework in Data Structures and Algorithms, Database Management Systems, and Object-Oriented Programming. I hava my current CGPA of 7.66.
+              Currently pursuing a Bachelor\'s degree in Computer Science at
+              Lovely Professional University in Punjab, India, with coursework
+              in Data Structures and Algorithms, Database Management Systems,
+              and Object-Oriented Programming. I hava my current CGPA of 7.66.
             </p>
           </div>
 
@@ -49,20 +52,25 @@ const Education = () => {
               <p className="text-sm text-neutral font-semibold">2018-2019</p>
             </div>
             <p className="text-sm text-neutral text-justify">
-              I have successfully completed my <b>Higher Secondary Education (XII)</b>{" "}
-              from Miss Hill Higher Secondary School, Gwalior, Madhya Pradesh with a percentage of 82%.
+              I have successfully completed my{" "}
+              <b>Higher Secondary Education (XII)</b> from Miss Hill Higher
+              Secondary School, Gwalior, Madhya Pradesh with a percentage of
+              82%.
             </p>
           </div>
 
           {/* SSC */}
           <div className="p-6 bg-[#313131] bg-opacity-90 backdrop-blur-lg rounded-lg shadow-lg w-[300px] hover:shadow-primary duration-300 cursor-pointer">
             <div className="text-right mb-4">
-              <h3 className="text-2xl font-semibold text-primary">High School</h3>
+              <h3 className="text-2xl font-semibold text-primary">
+                High School
+              </h3>
               <p className="text-sm text-neutral font-semibold">2016 - 2017</p>
             </div>
             <p className="text-sm text-neutral text-justify">
-            I have successfully completed my <b>Secondary Education (X)</b>{" "}
-              from T.S.S. International School, Morena, Madhya Pradesh with a CGPA of 9.6.
+              I have successfully completed my <b>Secondary Education (X)</b>{" "}
+              from T.S.S. International School, Morena, Madhya Pradesh with a
+              CGPA of 9.6.
             </p>
           </div>
         </div>

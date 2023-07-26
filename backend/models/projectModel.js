@@ -1,13 +1,13 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
-const projectModel= new mongoose.Schema({
+const projectModel = new mongoose.Schema({
   mainImage: {
     type: String,
-    default: "placeholder.jpg"
+    default: "placeholder.jpg",
   },
   images: {
     type: [String],
-    default: ["placeholder.jpg"]
+    default: ["placeholder.jpg"],
   },
   features: {
     type: String,
@@ -21,7 +21,7 @@ const projectModel= new mongoose.Schema({
     type: String,
     required: true,
     unique: true,
-    trim: true
+    trim: true,
   },
   description: {
     type: String,
@@ -29,7 +29,7 @@ const projectModel= new mongoose.Schema({
   },
   category: {
     type: String,
-    default: 'other'
+    default: "other",
   },
   liveLink: {
     type: String,
@@ -39,11 +39,10 @@ const projectModel= new mongoose.Schema({
   },
 });
 
-
-projectModel.pre('save', async function (next) {
-    next();
+projectModel.pre("save", async function (next) {
+  next();
 });
 
-const Project = mongoose.model('project', projectModel);
+const Project = mongoose.model("project", projectModel);
 
 module.exports = Project;

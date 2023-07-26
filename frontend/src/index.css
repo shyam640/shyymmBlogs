@@ -14,25 +14,25 @@ html {
 
 body {
   display: block;
-  background-color: #212121;
+  background-color: #3f3434;
   color: white;
   min-height: 100vh;
   position: relative;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 * {
   scrollbar-width: medium;
-  scrollbar-color: #FF651C #313131;
+  scrollbar-color: #ff651c #313131;
 }
 
 /* Works on Chrome, Edge, and Safari */
@@ -45,7 +45,7 @@ code {
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #FF651C;
+  background-color: #ff651c;
   border-radius: 20px;
   border: 3px solid #313131;
 }

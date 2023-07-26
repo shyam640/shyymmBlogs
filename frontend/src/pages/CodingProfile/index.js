@@ -7,7 +7,7 @@ import { BottomLine } from "../../components";
 import { Link } from "react-router-dom";
 import { FaHome } from "react-icons/fa";
 import PrimaryBtn from "../../components/atoms/PrimaryBtn";
-import serviceImage from "../../assets/repair.png"
+import serviceImage from "../../assets/repair.png";
 
 const CodingProfile = () => {
   return (
@@ -32,7 +32,7 @@ const CodingProfile = () => {
         </motion.div>
       </div>
       <div className="flex flex-col items-center">
-        <img src={serviceImage} alt="Comming Soon"/>
+        <img src={serviceImage} alt="Comming Soon" />
         <h2 className="text-2xl text-center mb-4">
           Sorry, Content of this page is not available yet.
         </h2>

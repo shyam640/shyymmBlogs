@@ -12,26 +12,24 @@ import {
   sectionBodyAnimation,
 } from "../../../hooks/useAnimation";
 
-
-
 const BlogIndex = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [blogs, setBlogs] = useState([]);
   const [blogsPerPage] = useState(6);
   const [ref, inView] = useInView();
   const [viewDiv, setViewDiv] = useState(false);
-  const animation = useAnimation();;
+  const animation = useAnimation();
   const indexOfLastBlog = currentPage * blogsPerPage;
   const indexOfFirstBlog = indexOfLastBlog - blogsPerPage;
 
   const fetchBlogs = async () => {
-    const { data } = await axios.get('/api/blogs');
+    const { data } = await axios.get("/api/blogs");
     setBlogs(data);
-  }
+  };
 
   useEffect(() => {
     fetchBlogs();
-  }, [])
+  }, []);
 
   const currentBlogs = blogs
     .sort((a, b) => new Date(b.date) - new Date(a.date))
@@ -105,7 +103,6 @@ const BlogIndex = () => {
                   <p className="text-neutral mt-1 mb-6">
                     {description?.slice(0, 80)} ...
                   </p>
-
                 </div>
               </div>
             );

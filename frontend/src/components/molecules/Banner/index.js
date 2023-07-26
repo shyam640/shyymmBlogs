@@ -24,10 +24,24 @@ const Banner = () => {
         animate={{ x: 0 }}
         transition={{ duration: 3 }}
       >
-        <h2 className="text-neutral text-xl font-medium translate-y-[-90%] sm:translate-y-[-0%]">Hello, I'm</h2>
-        <h1 className="text-4xl font-semibold mb-0 translate-y-[-50%] sm:translate-y-[-0%]">Shyam Sundar Vashishtha</h1>
+        <h2 className="text-neutral text-xl font-medium translate-y-[-90%] sm:translate-y-[-0%]">
+          Hello, I'm
+        </h2>
+        <h1 className="text-4xl font-semibold mb-0 translate-y-[-50%] sm:translate-y-[-0%] sm:text-sm">
+          Shyam Sundar Vashishtha
+        </h1>
         <p className="text-neutral max-w-xl mb-6 font-medium translate-y-[-20%] sm:translate-y-[-0%]">
-          Skilled in multiple programming languages and web development technologies, I have a passion for creating innovative solutions to complex problems. With experience in C/C++, Python, Java, HTML5, CSS3, JavaScript, Bootstrap, ReactJS, NodeJS, MongoDB, ExpressJS, SQL and familiarity with Amazon Web Services (AWS) platform for cloud-based solutions. I am able to tackle challenges head-on and deliver high-quality results. With a strong track record of success and a commitment to excellence, I am always striving to push the boundaries of what is possible. My ability to think outside the box and collaborate effectively with others makes me a valuable asset to any team.
+          Skilled in multiple programming languages and web development
+          technologies, I have a passion for creating innovative solutions to
+          complex problems. With experience in C/C++, Python, Java, HTML5, CSS3,
+          JavaScript, Bootstrap, ReactJS, NodeJS, MongoDB, ExpressJS, SQL and
+          familiarity with Amazon Web Services (AWS) platform for cloud-based
+          solutions. I am able to tackle challenges head-on and deliver
+          high-quality results. With a strong track record of success and a
+          commitment to excellence, I am always striving to push the boundaries
+          of what is possible. My ability to think outside the box and
+          collaborate effectively with others makes me a valuable asset to any
+          team.
         </p>
 
         <div className="flex items-center translate-y-[-60%] sm:translate-y-[-0%]">

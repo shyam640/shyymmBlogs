@@ -24,9 +24,9 @@ import man from "../../../assets/man.json";
 
 const MySkill = () => {
   const programmingStack = [
-    {title: "C/C++", icon: <SiCplusplus className="text-blue-700"/>},
-    {title: "Java", icon: <FaJava className="text-red-400"/>},
-    {title: "Python", icon: <FaPython className="text-yellow-600"/>}
+    { title: "C/C++", icon: <SiCplusplus className="text-blue-700" /> },
+    { title: "Java", icon: <FaJava className="text-red-400" /> },
+    { title: "Python", icon: <FaPython className="text-yellow-600" /> },
   ];
   const webStack = [
     { title: "HTML", icon: <FaHtml5 className="text-orange-600" /> },
@@ -40,17 +40,23 @@ const MySkill = () => {
   const frameworks = [
     { title: "React", icon: <FaReact className="text-cyan-400" /> },
     { title: "Bootstrap", icon: <FaBootstrap className="text-indigo-600" /> },
-    { title: "Tailwind-CSS", icon: <SiTailwindcss className="text-cyan-400" /> },
+    {
+      title: "Tailwind-CSS",
+      icon: <SiTailwindcss className="text-cyan-400" />,
+    },
     { title: "ExpressJS", icon: <SiExpress className="text-neutral" /> },
   ];
   const database = [
-    {title: "MongoDB", icon: <SiMongodb className="text-green-800"/>},
-    {title: "Firebase", icon: <SiFirebase className="text-blue-800"/>}
+    { title: "MongoDB", icon: <SiMongodb className="text-green-800" /> },
+    { title: "Firebase", icon: <SiFirebase className="text-blue-800" /> },
   ];
   const tools = [
     { title: "Postman", icon: <SiPostman className="text-red-600" /> },
     { title: "Git & GitHub", icon: <FaGithub className="text-black" /> },
-    { title: "Amazon Web Service", icon: <SiAmazonaws className="text-white-500" /> },
+    {
+      title: "Amazon Web Service",
+      icon: <SiAmazonaws className="text-white-500" />,
+    },
   ];
 
   const defaultOptions = {
@@ -68,7 +74,9 @@ const MySkill = () => {
       </h1>
       <div className="flex flex-col md:flex-row items-center justify-evenly my-8">
         <div>
-          <h2 className="text-cyan-500 text-xl font-semibold">Programming Stack:</h2>
+          <h2 className="text-cyan-500 text-xl font-semibold">
+            Programming Stack:
+          </h2>
           <div className="flex flex-wrap mb-4">
             {programmingStack?.map((skill) => (
               <div key={skill.title} className="text-center m-3">
@@ -109,9 +117,7 @@ const MySkill = () => {
               </div>
             ))}
           </div>
-          <h2 className="text-cyan-500 text-xl font-semibold">
-            Databases:
-          </h2>
+          <h2 className="text-cyan-500 text-xl font-semibold">Databases:</h2>
           <div className="flex flex-wrap mb-4">
             {database?.map((skill) => (
               <div key={skill.title} className="text-center m-3">

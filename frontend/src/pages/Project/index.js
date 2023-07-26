@@ -9,7 +9,7 @@ import {
   headingAnimation,
   sectionBodyAnimation,
 } from "../../hooks/useAnimation";
-import {BottomLine} from "../../components";
+import { BottomLine } from "../../components";
 
 const Project = () => {
   const [projects, setProjects] = useState([]);
@@ -21,15 +21,14 @@ const Project = () => {
   const animation = useAnimation();
 
   const fetchProjects = async () => {
-    const { data } = await axios.get('/api/projects');
+    const { data } = await axios.get("/api/projects");
     setProjects(data);
     setItems(data);
-  }
-  
+  };
+
   useEffect(() => {
     fetchProjects();
-  }, [])
-
+  }, []);
 
   useEffect(() => {
     if (inView) {
@@ -77,8 +76,9 @@ const Project = () => {
         >
           <div className="mt-6 mb-2 flex items-center justify-center flex-wrap">
             <button
-              className={`btn btn-sm bg-primary border-2 border-primary text-white hover:bg-transparent hover:border-primary duration-300 mx-3 my-3 sm:my-0 ${activeBtn === "all" && "active-btn"
-                }`}
+              className={`btn btn-sm bg-primary border-2 border-primary text-white hover:bg-transparent hover:border-primary duration-300 mx-3 my-3 sm:my-0 ${
+                activeBtn === "all" && "active-btn"
+              }`}
               onClick={() => {
                 setActiveBtn("all");
                 location.pathname === "/"
@@ -89,8 +89,9 @@ const Project = () => {
               All
             </button>
             <button
-              className={`btn btn-sm bg-primary border-2 border-primary text-white hover:bg-transparent hover:border-primary duration-300 mx-3 my-3 sm:my-0 ${activeBtn === "web-app" && "active-btn"
-                }`}
+              className={`btn btn-sm bg-primary border-2 border-primary text-white hover:bg-transparent hover:border-primary duration-300 mx-3 my-3 sm:my-0 ${
+                activeBtn === "web-app" && "active-btn"
+              }`}
               onClick={() => {
                 setActiveBtn("web-app");
                 filterItem("web-app");
@@ -99,8 +100,9 @@ const Project = () => {
               web-app
             </button>
             <button
-              className={`btn btn-sm bg-primary border-2 border-primary text-white hover:bg-transparent hover:border-primary duration-300 mx-3 my-3 sm:my-0 ${activeBtn === "website" && "active-btn"
-                }`}
+              className={`btn btn-sm bg-primary border-2 border-primary text-white hover:bg-transparent hover:border-primary duration-300 mx-3 my-3 sm:my-0 ${
+                activeBtn === "website" && "active-btn"
+              }`}
               onClick={() => {
                 setActiveBtn("website");
                 filterItem("website");
@@ -109,16 +111,16 @@ const Project = () => {
               Website
             </button>
             <button
-            className={`btn btn-sm bg-primary border-2 border-primary text-white hover:bg-transparent hover:border-primary duration-300 mx-3 my-3 sm:my-0 ${
-              activeBtn === "other" && "active-btn"
-            }`}
-            onClick={() => {
-              setActiveBtn("other");
-              filterItem("other");
-            }}
-          >
-            other
-          </button>
+              className={`btn btn-sm bg-primary border-2 border-primary text-white hover:bg-transparent hover:border-primary duration-300 mx-3 my-3 sm:my-0 ${
+                activeBtn === "other" && "active-btn"
+              }`}
+              onClick={() => {
+                setActiveBtn("other");
+                filterItem("other");
+              }}
+            >
+              other
+            </button>
           </div>
 
           {/* Items Card */}
