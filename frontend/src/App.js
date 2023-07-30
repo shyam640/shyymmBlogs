@@ -13,8 +13,8 @@ import {
 } from "./components";
 import { About, Auth, Blog, CodingProfile, Contact, Upload } from "./pages";
 
-const Home = React.lazy(() => import("./pages"));
-const Project = React.lazy(() => import("./pages"));
+const Home = React.lazy(() => import("./pages/Home"));
+const Project = React.lazy(() => import("./pages/Project"));
 
 function App() {
   const location = useLocation();
