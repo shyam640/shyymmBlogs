@@ -9,7 +9,7 @@ const TestimonialForm = () => {
   const [position, setPosition] = useState("");
   const [description, setDescription] = useState("");
   const [image, setImage] = useState(
-    "https://res.cloudinary.com/ratnesh035/image/upload/v1690034415/user_logo.png"
+    "https://res.cloudinary.com/shyymm640/image/upload/v1690728126/mh5meejogbszoenoxscs.png"
   );
 
   const handleTestimonialSubmit = async (e) => {
@@ -26,7 +26,7 @@ const TestimonialForm = () => {
       imageData.append("file", file);
       imageData.append("upload_preset", "portfolio_images");
 
-      await fetch("https://api.cloudinary.com/v1_1/ratnesh035/image/upload", {
+      await fetch("https://api.cloudinary.com/v1_1/shyymm640/image/upload", {
         method: "POST",
         body: imageData,
       })
@@ -40,7 +40,7 @@ const TestimonialForm = () => {
             description,
             image: imageUrl,
           };
-          axios.post("/api/testimonial", testimonialData, config);
+          axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/testimonial`, testimonialData, config);
         })
         .catch((error) => console.error(error));
 

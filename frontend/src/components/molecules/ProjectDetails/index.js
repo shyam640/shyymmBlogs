@@ -13,7 +13,7 @@ const ProjectDetails = () => {
   const [item, setItem] = useState();
 
   const fetchProjects = async () => {
-    const { data } = await axios.get("/api/projects");
+    const { data } = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/projects`);
     setProjects(data);
   };
 

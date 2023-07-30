@@ -16,7 +16,7 @@ const testimonialModel = new mongoose.Schema({
   image: {
     type: String,
     default:
-      "https://res.cloudinary.com/ratnesh035/image/upload/v1690034415/user_logo.png",
+      "https://res.cloudinary.com/shyymm640/image/upload/v1690728126/mh5meejogbszoenoxscs.png",
   },
 });
 

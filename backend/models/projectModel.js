@@ -3,11 +3,11 @@ const mongoose = require("mongoose");
 const projectModel = new mongoose.Schema({
   mainImage: {
     type: String,
-    default: "placeholder.jpg",
+    default: "https://res.cloudinary.com/shyymm640/image/upload/v1690728596/crp0wxwy7l35yg7abzze.png",
   },
   images: {
     type: [String],
-    default: ["placeholder.jpg"],
+    default: ["https://res.cloudinary.com/shyymm640/image/upload/v1690728596/crp0wxwy7l35yg7abzze.png"],
   },
   features: {
     type: String,

@@ -7,7 +7,7 @@ import Swal from "sweetalert2";
 const BlogForm = () => {
   const [loading, setLoading] = useState(false);
   const [image, setImage] = useState(
-    "https://icon-library.com/images/anonymous-avatar-icon/anonymous-avatar-icon-25.jpg"
+    "https://res.cloudinary.com/shyymm640/image/upload/v1690728596/crp0wxwy7l35yg7abzze.png"
   );
   const [title, setTitle] = useState("");
   const [path, setPath] = useState("");
@@ -36,7 +36,7 @@ const BlogForm = () => {
       imageData.append("upload_preset", "portfolio_images");
 
       // You can use fetch or any other AJAX method to upload the image to Cloudinary
-      await fetch("https://api.cloudinary.com/v1_1/ratnesh035/image/upload", {
+      await fetch("https://api.cloudinary.com/v1_1/shyymm640/image/upload", {
         method: "POST",
         body: imageData,
       })
@@ -53,7 +53,7 @@ const BlogForm = () => {
             description,
             image: imageUrl,
           };
-          axios.post("/api/blog", formData, config);
+          axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/blog`, formData, config);
         })
         .catch((error) => console.error(error));
 

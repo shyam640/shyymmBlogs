@@ -21,7 +21,7 @@ const Project = () => {
   const animation = useAnimation();
 
   const fetchProjects = async () => {
-    const { data } = await axios.get("/api/projects");
+    const { data } = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/projects`);
     setProjects(data);
     setItems(data);
   };

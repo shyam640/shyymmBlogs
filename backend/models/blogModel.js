@@ -21,7 +21,7 @@ const blogSchema = new mongoose.Schema({
   image: {
     type: String,
     default:
-      "https://icon-library.com/images/anonymous-avatar-icon/anonymous-avatar-icon-25.jpg",
+      "https://res.cloudinary.com/shyymm640/image/upload/v1690728596/crp0wxwy7l35yg7abzze.png",
   },
   instagram_link: {
     type: String,

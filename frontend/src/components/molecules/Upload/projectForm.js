@@ -36,7 +36,7 @@ const ProjectForm = () => {
         formData.append("upload_preset", "portfolio_images");
         formData.append("folder", "project_images");
         const imageResponse = await axios.post(
-          "https://api.cloudinary.com/v1_1/ratnesh035/image/upload",
+          "https://api.cloudinary.com/v1_1/shyymm640/image/upload",
           formData
         );
         multipleImagesUrls.push(imageResponse.data.secure_url);
@@ -48,7 +48,7 @@ const ProjectForm = () => {
       imageData.append("upload_preset", "portfolio_images");
 
       // You can use fetch or any other AJAX method to upload the image to Cloudinary
-      await fetch("https://api.cloudinary.com/v1_1/ratnesh035/image/upload", {
+      await fetch("https://api.cloudinary.com/v1_1/shyymm640/image/upload", {
         method: "POST",
         body: imageData,
       })

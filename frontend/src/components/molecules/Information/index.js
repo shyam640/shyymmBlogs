@@ -22,7 +22,7 @@ const Informasi = () => {
   const indexOfFirstBlog = indexOfLastBlog - blogsPerPage;
 
   const fetchBlogs = async () => {
-    const { data } = await axios.get("/api/blogs");
+    const { data } = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/blogs`);
     setBlogs(data);
   };
 

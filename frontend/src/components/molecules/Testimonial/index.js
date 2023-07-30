@@ -20,7 +20,7 @@ const Testimonial = () => {
   const animation = useAnimation();
 
   const fetchTestimonial = async () => {
-    const { data } = await axios.get("/api/testimonials");
+    const { data } = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/testimonials`);
     console.log(data);
     setTestimonial(data);
   };
