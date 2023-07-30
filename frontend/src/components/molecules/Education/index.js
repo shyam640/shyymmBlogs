@@ -28,7 +28,6 @@ const Education = () => {
           />
         </div>
         <div className="mx-auto lg:ml-auto">
-          {/* Diploma */}
           <div className="p-6 bg-[#313131] bg-opacity-90 backdrop-blur-lg rounded-lg shadow-lg inline-block w-[300px] hover:shadow-primary duration-300 cursor-pointer">
             <div className="text-right mb-4">
               <h3 className="text-2xl font-semibold text-primary">

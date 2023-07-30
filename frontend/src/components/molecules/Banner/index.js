@@ -27,7 +27,7 @@ const Banner = () => {
         <h2 className="text-neutral text-xl font-medium translate-y-[-90%] sm:translate-y-[-0%]">
           Hello, I'm
         </h2>
-        <h1 className="text-4xl font-semibold mb-0 translate-y-[-50%] sm:translate-y-[-0%] sm:text-sm">
+        <h1 className="text-4xl font-semibold translate-y-[-50%] sm:translate-y-[-0%] sm:text-sm sm:mt-2">
           Shyam Sundar Vashishtha
         </h1>
         <p className="text-neutral max-w-xl mb-6 font-medium translate-y-[-20%] sm:translate-y-[-0%]">

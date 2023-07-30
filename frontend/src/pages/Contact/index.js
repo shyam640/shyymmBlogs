@@ -186,14 +186,14 @@ const Contact = () => {
               <FaGithubSquare></FaGithubSquare>
             </a>
             <a
-              href="https://twitter.com/"
+              href="https://twitter.com/Its_shyam640"
               target="blank"
               className="text-3xl text-neutral hover:text-primary hover:-translate-y-1.5 shadow-lg mx-1 duration-300"
             >
               <FaTwitterSquare></FaTwitterSquare>
             </a>
             <a
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/_shhyy__mm_640_/"
               target="blank"
               className="text-3xl text-neutral hover:text-primary hover:-translate-y-1.5 shadow-lg mx-1 duration-300"
             >

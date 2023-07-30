@@ -1,9 +1,9 @@
 {
-  "short_name": "its_shyam640",
-  "name": "Shyam Sundar Vashishtha | Portfolio",
+  "short_name": "shyy-blogs",
+  "name": "Shyam Sundar Vashishtha | Portfolio & Blogs",
   "icons": [
     {
-      "src": "favicon.png",
+      "src": "favicon.jpg",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
