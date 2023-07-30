@@ -99,14 +99,14 @@ export default function Navbar() {
                 </span>
               </PrimaryBtn>
             </a>
-            <a className="inline-block ml-4" href="/auth">
+            <Link to="/auth" className="inline-block ml-4">
               <PrimaryBtn>
                 <span>Upload</span>
                 <span>
                   <RiUpload2Fill />
                 </span>
               </PrimaryBtn>
-            </a>
+            </Link>
           </ul>
           <div className="block lg:hidden">
             <button onClick={toggleDrawer} className="btn btn-ghost text-white">
@@ -155,14 +155,14 @@ export default function Navbar() {
                       </span>
                     </button>
                   </a>
-                  <a className="inline-block w-full" href="/auth">
-                    <button className="mt-4 primary-button w-full text-white">
+                  <Link to="/auth" className="inline-block ml-4">
+                    <PrimaryBtn>
                       <span>Upload</span>
                       <span>
                         <RiUpload2Fill />
                       </span>
-                    </button>
-                  </a>
+                    </PrimaryBtn>
+                  </Link>
                 </li>
               </ul>
               <div className="text-center">
