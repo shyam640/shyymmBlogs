@@ -2,9 +2,6 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-      backgroundImage: {
-        eduBg: "url('/src/assets/icon512.png')",
-      },
     },
   },
   plugins: [require("daisyui")],
